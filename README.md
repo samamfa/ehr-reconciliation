@@ -39,7 +39,7 @@ cd backend && npm test
 
 ## LLM Choice
 
-Used gemini-2.0-flash via @google/generative-ai. Both endpoints call the LLM once per unique request. Gemini was chosen for its free tier availability via Google AI Studio, making the app fully functional without any API costs.
+Used gemini-flash-latest via @google/generative-ai. Both endpoints call the LLM once per unique request. Gemini was chosen for its free tier availability via Google AI Studio, making the app fully functional without any API costs.
 
 With `AI_ENABLED=false` (default), the app runs fully in mock mode — no API key needed. To enable real AI: add your own `GEMINI_API_KEY` to `.env`, set `AI_ENABLED=true`, then restart the server.
 
